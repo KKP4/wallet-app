@@ -18,6 +18,7 @@ async function getTransaction(type: string): Promise<number> {
   }
 }
 
+// Creates a new play session for a player
 export async function createSession(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
     console.log("Creating new play session");
@@ -81,7 +82,7 @@ export async function createWalletWithLog(req: Request, res: Response, next: Nex
 }
 
 // Withdraw the specified amount from wallet
-// and create a transaction log entry
+// Must be part of a play session
 export async function withdrawFromWallet(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
     const playerID: number = parseInt(req.params.playerid);
@@ -147,6 +148,8 @@ export async function withdrawFromWallet(req: Request, res: Response, next: Next
   }
 }
 
+// Deposits a specified amount to the player's wallet
+// Must be part of a play session
 export async function depositToWallet(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
     const playerID: number = parseInt(req.params.playerid);
@@ -194,7 +197,7 @@ export async function depositToWallet(req: Request, res: Response, next: NextFun
   }
 }
 
-// Get all transaction logs for player
+// Get all transactions for player
 export async function getTransactionsForPlayer(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
     const playerID: number = parseInt(req.params.playerid);
