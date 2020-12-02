@@ -15,7 +15,6 @@ sudo apt install nodejs
 sudo apt install npm
 git clone https://github.com/KKP4/wallet-app.git
 npm install
-
 ```
 ## After the installation create a .env file in ./setup with the following:
 
