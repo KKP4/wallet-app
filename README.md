@@ -49,10 +49,10 @@ Creates a wallet for a player and deposit the initial amount
 Creates a play session
 - http://localhost:8080/api/session/:playerid/
 
-Withdraw the specified amount
+Withdraw the specified amount (in a session)
 - http://localhost:8080/api/wallet/withdraw/:playerid/:amount/:sessionid
 
-Deposits a specified amount
+Deposits a specified amount (in a session)
 - http://localhost:8080/api/wallet/deposit/:playerid/:amount/:sessionid
 
 Returns a player's transaction history
