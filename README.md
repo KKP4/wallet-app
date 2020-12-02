@@ -60,6 +60,8 @@ Returns a player's transaction history
 
 # Additional notes
 The application uses pg-promise for it's database interface. Read more: https://github.com/vitaly-t/pg-promise
-It also comes with a pre-configured logger. Read more: https://github.com/winstonjs/winstonwhich 
+
+It also comes with a pre-configured logger. Read more: https://github.com/winstonjs/winstonwhich
+
 It logs all endpoint requests and potential errors to .json files in ./logs.
 You can turn this feature off by setting the "silent = True" property in .utils/logger.ts.
