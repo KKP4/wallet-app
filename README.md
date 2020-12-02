@@ -47,22 +47,20 @@ npm run-script build
 ## REST API endpoints
 
 Creates a wallet for a player and deposit the initial amount
-- http://localhost:8080/api/wallet/create/:player_id/:amount
-
 ###### Returns an error if the player already has a wallet
+- http://localhost:8080/api/wallet/create/:player_id/:amount
 
 Creates a play session
 - http://localhost:8080/api/session/:playerid/
 
 Withdraw the specified amount (in a session)
+###### Returns an error if the session expired
 - http://localhost:8080/api/wallet/withdraw/:playerid/:amount/:sessionid
 
-###### Returns an error if the session expired
-
 Deposits a specified amount (in a session)
-- http://localhost:8080/api/wallet/deposit/:playerid/:amount/:sessionid
-
 ###### Returns an error if the session expired
+
+- http://localhost:8080/api/wallet/deposit/:playerid/:amount/:sessionid
 
 Returns a player's transaction history
 - http://localhost:8080/api/wallet/history/:playerid
