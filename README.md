@@ -31,7 +31,7 @@ touch setup/.env
 ## Create the database tables:
 
 ```
-sudo -u your_user_name psql -f db_init.sql
+cd setup && sudo -u your_user_name psql -f db_init.sql
 ```
 
 ## Start the development server:
