@@ -1,7 +1,7 @@
 
 # wallet-app
 
-A simple CRUD app written in Typescript, Node.js, Express.js with a PostgreSQL for the database.
+A simple CRUD app written in Typescript, Node.js, Express.js with PostgreSQL for the database.
 
 ## Requirements:
 - Node.js
