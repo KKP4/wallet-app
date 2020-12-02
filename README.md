@@ -20,7 +20,7 @@ npm install
 ## After the installation create a .env file in ./setup with the following:
 
 ```
-touch setup/.env
+cd setup && touch .env
 ```
 - DB_HOST=localhost
 - DB_PORT=5432
